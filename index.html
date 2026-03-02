@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Beauty Salon - Blend & Bloom</title>
+
+        <!-- Bootstrap CSS -->
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"
+            rel="stylesheet">
+
+        <!-- Font Awesome Icons -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet">
+
+    </head>
+    <body>
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-light sticky-top py-0">
+            <div class="container">
+                <a class="navbar-brand" href="#index"><div class="logo-img-div"><img
+                            src="./assets/BlendAndBloomLogo.png"
+                            alt="Blend & Bloom Logo" class="logo-img"
+                            width="100%" /></div>
+                        </a>
+                <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link"
+                                href="#index">Home</a></li>
+                        <li class="nav-item"><a class="nav-link"
+                                href="#aboutUs">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link"
+                                href="#services">Services</a></li>
+                        <li class="nav-item"><a class="nav-link"
+                                href="#gallery">Gallery</a></li>
+                        <li class="nav-item"><a class="nav-link"
+                                href="#contact">Contact Us</a></li>
+                    </ul>
+                    <button class="btn btn-book my-3" onclick="openWhatsApp()"><i
+                            class="fas fa-calendar-alt"></i> Book Now</button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 hero-content">
+                        <h1>Our <span>Exclusive</span></h1>
+                        <p>Indulge in Luxurious Pre-Bridal Packages
+                            Where Beauty, Care, and Confidence Begin
+                            Rejuvenating Hair Spa Services for Silky, Healthy
+                            Hair
+                            Crafted to Make You Glow on Your Most Special Day
+                            ✨</p>
+                    </div>
+                    <div class="col-lg-6 hero-image">
+                        <img
+                            src="./assets/bride.png"
+                            alt="Beauty Professional">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Preview -->
+        <section class="services" id="services">
+            <div class="container">
+                <h2 class="text-center">Featured <span>Services</span></h2>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="service-card">
+                            <img
+                                src="./assets/Professional-Hair-Styling.jpg"
+                                alt="Hair Styling">
+                            <div class="service-card-body">
+                                <span class="service-label">PREMIUM
+                                    SERVICE</span>
+                                <h5>Professional Hair Styling</h5>
+                                <p style="font-size: 14px; color: #666;">Expert
+                                    hair styling for all occasions</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="service-card">
+                            <img
+                                src="./assets/Modern-Hair-Cutting.jpg"
+                                alt="Hair Cut">
+                            <div class="service-card-body">
+                                <span class="service-label">PREMIUM
+                                    SERVICE</span>
+                                <h5>Modern Hair Cutting</h5>
+                                <p style="font-size: 14px; color: #666;">Latest
+                                    trends and classic styles</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="service-card">
+                            <img
+                                src="./assets/Party-Makeup.jpg"
+                                alt="Party Makeup">
+                            <div class="service-card-body">
+                                <span class="service-label">PREMIUM
+                                    SERVICE</span>
+                                <h5>Party Makeup</h5>
+                                <p
+                                    style="font-size: 14px; color: #666;">Soft
+                                    glam for stunning evenings</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="service-card">
+                            <img
+                                src="./assets/Professional-Grooming-Services.png"
+                                alt="Professional Grooming Services">
+                            <div class="service-card-body">
+                                <span class="service-label">PREMIUM
+                                    SERVICE</span>
+                                <h5>Professional Grooming Services</h5>
+                                <p
+                                    style="font-size: 14px; color: #666;">Professional
+                                    care, personalized style</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials" id="aboutUs">
+            <div class="container">
+                <div class="text-center">
+                    <span class="testimonial-tag">
+                        About US</span>
+                </div>
+                <h2>Your beauty and <span>Success</span><br>start here</h2>
+
+                <div class="row">
+
+                    <div class="col-md-6 d-flex justify-content-center align-items-end">
+                         <div class="testimonial-image-div">
+                            <img src="./assets/aboutUsImg.png" alt="About Us" width="100%" />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                       <p class="testimonial-subtitle mt-5">We believe every woman deserves
+                    to look and feel her best. Our salon offers expert bridal
+                    makeup, party makeup, hair styling, hair spa,
+                    facials, skincare, and professional grooming —all
+                    tailored to your unique style.
+                </br>
+                Our exclusive Pre-Bridal Packages and Hair Spa Treatments
+                    are crafted using high-quality brands like L’Oréal, Lotus,
+                    and Cheryl’s, ensuring safe, luxurious, and flawless results
+                    for your special moments.
+                </p>
+                <p class="testimonial-subtitle mt-5">At Blend & Bloom, we are committed to
+                    making you look and feel your absolute best. Your beauty and
+                    confidence are our top priorities, and we can’t wait to
+                    welcome you to our salon for an unforgettable experience.</p>
+                    </div>
+                 </div>
+                
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section class="gallery" id="gallery">
+            <div class="container">
+                <h2 class="mb-5">Our <span>Gallery</span></h2>
+                <div class="row g-3">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="gallery-item">
+                            <img
+                                src="./assets/blendAndBloomGAl1.png"
+                                alt="Gallery">
+                            <div class="gallery-overlay" onclick="openPreview('./assets/blendAndBloomGAl1.png')">
+                                <i class="fas fa-search-plus"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="gallery-item" onclick="openPreview('./assets/blendAndBloomGAl1.png')">
+                            <img
+                                src="./assets/blendAndBloomGAl1.png"
+                                alt="Gallery">
+                            <div class="gallery-overlay">
+                                <i class="fas fa-search-plus"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="gallery-item">
+                            <img
+                                src="./assets/blendAndBloomGAl1.png"
+                                alt="Gallery">
+                            <div class="gallery-overlay" onclick="openPreview('./assets/blendAndBloomGAl1.png')">
+                                <i class="fas fa-search-plus"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="gallery-item">
+                            <img
+                                src="./assets/blendAndBloomGAl1.png"
+                                alt="Gallery">
+                            <div class="gallery-overlay" onclick="openPreview('./assets/blendAndBloomGAl1.png')">
+                                <i class="fas fa-search-plus"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- What We're Offering Section -->
+        <section class="offerings" id="offerings">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <h2 class="offerings-title">What We're
+                            <span>Offering</span></h2>
+                        <div class="offering-item">
+                            <h5><i class="fas fa-cut"></i> Hair Cutting &
+                                Styling</h5>
+                            <p>Professional cuts and modern styling
+                                techniques</p>
+                        </div>
+                        <div class="offering-item">
+                            <h5><i class="fas fa-palette"></i> Hair
+                                Coloring</h5>
+                            <p>Premium color services with professional
+                                results</p>
+                        </div>
+                        <div class="offering-item">
+                            <h5><i class="fas fa-spa"></i>Hair Spa</h5>
+                            <p>Healthy hair for your big day</p>
+                        </div>
+                        <div class="offering-item">
+                            <h5><i class="fas fa-heart"></i> Beauty Care</h5>
+                            <p>Comprehensive beauty and skincare solutions</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="row g-3">
+                            <div class="col-2">
+                                <img
+                                    src="./assets/loreal.jpg"
+                                    alt="Product"
+                                    style="width: 100%; border-radius: 10px;">
+                            </div>
+                            <div class="col-2">
+                                <img
+                                    src="./assets/lotus.jpg"
+                                    alt="Product"
+                                    style="width: 100%; border-radius: 10px;">
+                            </div>
+                            <div class="col-2">
+                                <img
+                                    src="./assets/cheryl's.jpg"
+                                    alt="Product"
+                                    style="width: 100%; border-radius: 10px;">
+                            </div>
+                             
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer" id="contact">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-md-3 px-3">
+                        
+                        <div class="logo-img-div"><img
+                            src="./assets/BlendAndBloomLogo.png"
+                            alt="Blend & Bloom Logo" class="logo-img"
+                            width="100%" /></div>
+
+                        <p class="my-4">Your trusted beauty salon for all your beauty and
+                            hair care needs.</p>
+                        <div class="social-icons">
+                            <!-- <a href="#" class="social-icon"><i
+                                    class="fab fa-facebook-f"></i></a> -->
+                            <a href="https://www.instagram.com/blendandbloom_thesalon/" class="social-icon"><i
+                                    class="fab fa-instagram"></i></a>
+                            <!-- <a href="#" class="social-icon"><i
+                                    class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-icon"><i
+                                    class="fab fa-pinterest"></i></a> -->
+                        </div>
+                    </div>
+                    <div class="col-md-3 pt-2 px-3">
+                        <h5>Quick Links</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#index">Home</a></li>
+                            <li><a href="#aboutUs">About Us</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#gallery">Gallery</a></li>
+                         </ul>
+                    </div>
+                    <div class="col-md-3 pt-2 px-3">
+                        <h5>Services</h5>
+                        <ul class="list-unstyled">
+                            <li>Hair Styling</li>
+                            <li>Hair Coloring</li>
+                            <li>Spa Treatments</li>
+                            <li>Beauty Care</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 pt-2 px-3">
+                        <h5>Contact Info</h5>
+                        <p><i class="fas fa-map-marker-alt"></i> Shop No. 16, Vardhman Kings Court, Gandhi 
+                            Path Rd, West, Vaishali Nagar, Jaipur, Rajasthan 302034</p>
+                        <p><i class="fas fa-phone"></i> +91- 6376030629</p>
+                        <!-- <p><i class="fas fa-envelope"></i>
+                            info@blendandbloom.com</p> -->
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2026 Blend & Bloom Beauty Salon. All rights
+                        reserved.</p>
+                </div>
+            </div>
+        </footer>
+
+        <div id="imageModal" class="modal" onclick="closePreview()">
+  <img id="previewImg">
+</div>
+
+        <!-- Bootstrap JS -->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+        <script src="main.js"></script>
+    </body>
+</html>
